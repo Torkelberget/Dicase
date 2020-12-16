@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 #{title}
+
+  for item in items
+
+    div
+      p.title #[a(href="#{item.link}") #{item.title}]
+      p.small Author: #{item.creator}, published: #{item.pubDate}
